@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "setup-db": "psql -U postgres -f database/schema.sql",
+    "setup-db": "psql 'postgresql://neondb_owner:Ajeem%21%40%2412345@ep-flat-leaf-ahdy2tbr-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require' -f database/schema.sql",
     "seed-db": "node scripts/seedDatabase.js",
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "jest --testPathPattern=tests/unit",
